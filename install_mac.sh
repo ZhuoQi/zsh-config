@@ -1,5 +1,6 @@
 #!/bin/bash
 # This script setups the environment for zsh
+USER_NAME=$(id -un)
 
 # Copy Fonts for system-wide access
 sudo cp fonts/* /Library/Fonts/
@@ -14,3 +15,6 @@ zsh -c "git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/cust
 # Copy config files
 cp .zshrc ~/.zshrc
 cp .p10k.zsh ~/.p10k.zsh
+
+# Change default shell
+sudo chsh -s /usr/local/bin/zsh $USER_NAME
