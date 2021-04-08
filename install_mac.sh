@@ -1,0 +1,36 @@
+# prerequisite: setup git
+
+# install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install wget
+
+# make a temp directory for storing all intermediate files
+cd ~
+mkdir tmp
+cd tmp
+touch env.sh
+chmod 755 env.sh
+
+# setup iterm profile
+
+# setup vim
+
+# setup zsh and fix permissions
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+echo 'export ZSH_THEME="powerlevel10k/powerlevel10k"' >> env.sh
+git -C $ZSH_CUSTOM/themes/powerlevel10k pull
+compaudit | xargs chmod g-w,o-w
+
+# setup conda
+wget -O install_conda.sh https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-MacOSX-x86_64.sh
+chmod 755 install_conda.sh
+./install_conda.sh -b
+echo 'export CONDA_PATH=$HOME/miniconda3/bin' >> env.sh
+echo 'export PATH=$PATH:$CONDA_PATH' >> env.sh
+source env.sh
+
+# finish all zshrc changes
+conda init zsh
+mv env.sh ~/env.sh
+echo 'source ~/env.sh'"\n$(cat ~/.zshrc)" > ~/.zshrc
