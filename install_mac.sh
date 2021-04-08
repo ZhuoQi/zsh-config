@@ -1,10 +1,9 @@
-# prerequisite: setup git
-
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install wget
 
 # make a temp directory for storing all intermediate files
+echo "Created a temporary folder at ~/tmp"
 cd ~
 mkdir tmp
 cd tmp
@@ -34,3 +33,6 @@ source env.sh
 conda init zsh
 mv env.sh ~/env.sh
 echo 'source ~/env.sh'"\n$(cat ~/.zshrc)" > ~/.zshrc
+
+# clean up
+rm -r ~/tmp
