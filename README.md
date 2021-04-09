@@ -19,3 +19,4 @@ This repo stores the scripts for setting up development environment for new unix
 	4. Universal-ctags https://github.com/universal-ctags/ctags
 	5. Gutentags https://github.com/ludovicchabant/vim-gutentags
 	6. Asynchronous Linting Engine (ALE) https://github.com/dense-analysis/ale
+	7. Other plugins https://vimawesome.com/
