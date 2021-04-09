@@ -13,6 +13,14 @@ chmod 755 env.sh
 # setup iterm profile
 
 # setup vim
+cp .vimrc ~/.vimrc
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+cd ~/.vim/bundle
+git clone https://github.com/preservim/nerdtree.git
+git clone https://github.com/universal-ctags/ctags.git
+git clone https://github.com/ludovicchabant/vim-gutentags.git
+git clone https://github.com/dense-analysis/ale.git
 
 # setup zsh and fix permissions
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
