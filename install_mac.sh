@@ -40,7 +40,9 @@ source env.sh
 # finish all zshrc changes
 conda init zsh
 mv env.sh ~/env.sh
+brew install zsh-syntax-highlighting
 echo 'source ~/env.sh'"\n$(cat ~/.zshrc)" > ~/.zshrc
+echo 'source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc
 
 # clean up
 rm -r ~/tmp
