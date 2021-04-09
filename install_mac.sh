@@ -30,6 +30,9 @@ echo 'export ZSH_THEME="powerlevel10k/powerlevel10k"' >> env.sh
 git -C $ZSH_CUSTOM/themes/powerlevel10k pull
 compaudit | xargs chmod g-w,o-w
 
+# add zsh plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 # setup conda
 wget -O install_conda.sh https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-MacOSX-x86_64.sh
 chmod 755 install_conda.sh

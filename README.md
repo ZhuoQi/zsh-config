@@ -5,6 +5,7 @@ This repo stores the scripts for setting up development environment for new unix
 1. Setup git
 2. Run `./install_mac.sh` for Homebrew + Zsh/theme + Conda
 3. Run `p10k configure` to configure zsh theme
+4. Add `zsh-autosuggestions` to ohmyzsh plugin in `.zshrc`
 
 ## Resources
 1. Homebrew https://brew.sh/
