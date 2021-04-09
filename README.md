@@ -20,3 +20,4 @@ This repo stores the scripts for setting up development environment for new unix
 	5. Gutentags https://github.com/ludovicchabant/vim-gutentags
 	6. Asynchronous Linting Engine (ALE) https://github.com/dense-analysis/ale
 	7. Other plugins https://vimawesome.com/
+	8. How to jump to definition with tags https://dev.to/iggredible/how-to-use-tags-in-vim-to-jump-to-definitions-quickly-2g28
