@@ -11,8 +11,6 @@ cd tmp
 touch env.sh
 chmod 755 env.sh
 
-# setup iterm profile
-
 # setup vim
 cp .vimrc ~/.vimrc
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
@@ -27,6 +25,7 @@ git clone https://github.com/dense-analysis/ale.git
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 echo 'export ZSH_THEME="powerlevel10k/powerlevel10k"' >> env.sh
+export ZSH_THEME="powerlevel10k/powerlevel10k"
 git -C $ZSH_CUSTOM/themes/powerlevel10k pull
 compaudit | xargs chmod g-w,o-w
 

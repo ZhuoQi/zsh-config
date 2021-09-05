@@ -1,6 +1,7 @@
-call pathogen#infect()
+execute pathogen#infect()
 syntax on
 filetype plugin indent on
+set relativenumber
 
 " key mappings below
 map  <C-m> :tabn<CR>
