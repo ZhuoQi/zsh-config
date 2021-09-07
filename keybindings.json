@@ -1,0 +1,41 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+right",
+        "command": "-cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "cmd+left",
+        "command": "-cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "cmd+right",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "end",
+        "command": "-cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+left",
+        "command": "cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "home",
+        "command": "-cursorHome",
+        "when": "textInputFocus"
+    }
+]

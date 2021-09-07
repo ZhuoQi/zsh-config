@@ -1,0 +1,22 @@
+{
+    "workbench.colorTheme": "Dracula Soft",
+    "python.condaPath": "/Users/zhuoqil/miniconda3/bin/conda",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "jupyter.askForKernelRestart": false,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true,
+    },
+    "remote.SSH.configFile": "/Users/zhuoqil/.ssh/config",
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.zoomLevel": 1,
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#83967a",
+        "editor.selectionHighlightBackground": "#5e7378",
+        "editor.findMatchBackground": "#6b9a57",
+        "editor.findMatchHighlightBorder": "#7777ee"
+    }
+}
