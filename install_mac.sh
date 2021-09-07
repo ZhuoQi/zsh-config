@@ -49,5 +49,10 @@ echo 'source ~/env.sh'"\n$(cat ~/.zshrc)" > ~/.zshrc
 echo 'source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc
 echo '[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh' >> ~/.zshrc
 
+# setup VSCode
+VSCODE_PATH="~/Library/Application\ Support/Code/User/"
+cmd="cp ./keybindings.json $VSCODE_PATH" && echo $cmd | bash
+cmd="cp ./settings.json $VSCODE_PATH" && echo $cmd | bash
+
 # clean up
 rm -r ~/tmp
